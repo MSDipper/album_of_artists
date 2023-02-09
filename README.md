@@ -14,6 +14,7 @@
 ##### 2) Создать виртуальное окружение
 
     python -m venv venv
+
     
 ##### 3) Активировать виртуальное окружение
 
@@ -21,16 +22,20 @@
 
     venv/bin/activate - Linux
 
-##### 4) Выполнить билд docker-compose:
+##### 4) Устанавливить зависимости:
+
+    pip install -r req.txt
+
+##### 5) Выполнить билд docker-compose:
     docker-compose build
 
-##### 5) Применить миграции:
+##### 6) Применить миграции:
     docker-compose run --rm a_w sh -c "python manage.py migrate"
 
-##### 6) Создать супер юзера:
+##### 7) Создать супер юзера:
     docker-compose run --rm a_w sh -c "python manage.py createsuperuser"
 
-##### 7) Запустить docker-compose:
+##### 8) Запустить docker-compose:
     docker-compose up
 
 
