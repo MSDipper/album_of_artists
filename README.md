@@ -6,17 +6,20 @@
 ## Разработка
 
 
+##### 1) Клонировать репозиторий
 
-##### 1) Выполнить билд docker-compose:
+    git clone ссылка_сгенерированная_в_вашем_репозитории
+
+##### 2) Выполнить билд docker-compose:
     docker-compose build
 
-##### 2) Применить миграции:
+##### 3) Применить миграции:
     docker-compose run --rm a_w sh -c "python manage.py migrate"
 
-##### 3) Создать супер юзера:
+##### 4) Создать супер юзера:
     docker-compose run --rm a_w sh -c "python manage.py createsuperuser"
 
-##### 4) Запустить docker-compose:
+##### 5) Запустить docker-compose:
     docker-compose up
 
 
